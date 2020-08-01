@@ -111,7 +111,7 @@ function init() {
     const employees = await db.findAllEmployees();
     console.log("\n");
     console.table(employees);
-    loadMainPrompts();
+//     loadMainPrompts();
   }
   
   async function viewEmployeesByDepartment() {
@@ -131,7 +131,7 @@ function init() {
     const employees = await db.findAllEmployeesByDepartment(departmentId);
     console.log("\n");
     console.table(employees);
-    loadMainPrompts();
+//     loadMainPrompts();
   }
   
   async function viewEmployeesByManager() {
@@ -155,7 +155,7 @@ function init() {
     } else {
       console.table(employees);
     }
-    loadMainPrompts();
+//     loadMainPrompts();
   }
   
   async function removeEmployee() {
